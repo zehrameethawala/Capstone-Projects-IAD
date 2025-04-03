@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-require("dotenv").config({
-    path: '.env'
-})
+require("dotenv").config();
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,7 +17,12 @@ let projects = [
     { id: 2, name: "Project Beta" },
   ];
 
+
+module.exports = app;
+
+
 // Routes
+
 
 // Homepage
 app.get('/',(req,res) => {
