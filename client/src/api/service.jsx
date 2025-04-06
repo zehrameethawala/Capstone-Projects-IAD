@@ -1,5 +1,3 @@
-// const API_BASE_URL = 'https://project-list-management-app-api.vercel.app/api';
-
 export const fetchProjects = async () => {
   const response = await fetch(`https://project-list-management-app-api.vercel.app/api/projects`);
   return response.json();
